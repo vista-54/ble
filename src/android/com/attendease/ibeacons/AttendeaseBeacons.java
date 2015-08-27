@@ -95,7 +95,7 @@ Log.v(TAG, "Bundle extras "+extras);
         try {
 			Log.v(TAG, "Start try ");
             Hashtable<String, Vector> beacons = (Hashtable) extras.get("beaconUUIDs");
-Log.v(TAG, "Start try "+ (Hashtable) extras.get("beacons"));
+Log.v(TAG, "Start try "+ beacons);
             // get beacons from static method
            // Hashtable<String, Vector> beacons = AttendeaseBeaconConsumer.getBeacons();
 
