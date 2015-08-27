@@ -85,7 +85,9 @@ public class AttendeaseBeacons extends CordovaPlugin
 
     private void getBeacons(CallbackContext callbackContext)
     {
+        Log.v(TAG, "GetBeacons start "+callbackContext );
         JSONArray beaconArray = new JSONArray();
+Log.v(TAG, "JSONArray beaconArray "+beaconArray );
 
         // Can't we get the data from the instance?
         //Bundle extras = beaconConsumer.getExtras();
