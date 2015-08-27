@@ -98,7 +98,7 @@ Log.v(TAG, "Bundle extras "+extras);
 Log.v(TAG, "Start try "+ beacons);
             // get beacons from static method
            // Hashtable<String, Vector> beacons = AttendeaseBeaconConsumer.getBeacons();
-Log.v(TAG, "Start try "+ AttendeaseBeaconConsumer);
+//Log.v(TAG, "Start try "+ AttendeaseBeaconConsumer);
             Enumeration<String> enumKey = beacons.keys();
             while(enumKey.hasMoreElements()) {
                 String key = enumKey.nextElement();
