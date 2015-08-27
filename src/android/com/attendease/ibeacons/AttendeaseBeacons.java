@@ -91,10 +91,10 @@ Log.v(TAG, "JSONArray beaconArray "+beaconArray );
 
         // Can't we get the data from the instance?
         Bundle extras = beaconConsumer.getExtras();
-Log.v(TAG, "Bundle extras "+beaconConsumer.getExtras());
+Log.v(TAG, "Bundle extras "+extras);
         try {
 			Log.v(TAG, "Start try ");
-            Hashtable<String, Vector> beacons = (Hashtable) extras.get("beacons");
+            Hashtable<String, Vector> beacons = (Hashtable) extras.get("beaconUUIDs");
 Log.v(TAG, "Start try "+ (Hashtable) extras.get("beacons"));
             // get beacons from static method
            // Hashtable<String, Vector> beacons = AttendeaseBeaconConsumer.getBeacons();
