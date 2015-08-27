@@ -90,15 +90,15 @@ public class AttendeaseBeacons extends CordovaPlugin
 Log.v(TAG, "JSONArray beaconArray "+beaconArray );
 
         // Can't we get the data from the instance?
-        Bundle extras = beaconConsumer.getExtras();
-Log.v(TAG, "Bundle extras "+extras);
+      //  Bundle extras = beaconConsumer.getExtras();
+//Log.v(TAG, "Bundle extras "+extras);
         try {
 			Log.v(TAG, "Start try ");
-            Hashtable<String, Vector> beacons = (Hashtable) extras.get("beaconUUIDs");
-Log.v(TAG, "Start try "+ beacons);
+       //     Hashtable<String, Vector> beacons = (Hashtable) extras.get("beaconUUIDs");
+//Log.v(TAG, "Start try "+ beacons);
             // get beacons from static method
            // Hashtable<String, Vector> beacons = AttendeaseBeaconConsumer.getBeacons();
-//Log.v(TAG, "Start try "+ AttendeaseBeaconConsumer);
+Log.v(TAG, "Start try "+ AttendeaseBeaconConsumer);
             Enumeration<String> enumKey = beacons.keys();
             while(enumKey.hasMoreElements()) {
                 String key = enumKey.nextElement();
