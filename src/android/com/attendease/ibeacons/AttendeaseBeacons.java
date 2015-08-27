@@ -80,7 +80,7 @@ public class AttendeaseBeacons extends CordovaPlugin
 
         this.cordova.getActivity().startService(beaconConsumer);
 
-        callbackContext.success("This was a great success...");
+         callbackContext.success("This was a great success..."+beaconUUIDs.toString());
     }
 
     private void getBeacons(CallbackContext callbackContext)
