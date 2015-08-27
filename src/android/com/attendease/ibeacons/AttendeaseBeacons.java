@@ -93,8 +93,9 @@ Log.v(TAG, "JSONArray beaconArray "+beaconArray );
         Bundle extras = beaconConsumer.getExtras();
 Log.v(TAG, "Bundle extras "+beaconConsumer.getExtras());
         try {
-            //Hashtable<String, Vector> beacons = (Hashtable) extras.get("beacons");
-
+			Log.v(TAG, "Start try ");
+            Hashtable<String, Vector> beacons = (Hashtable) extras.get("beacons");
+Log.v(TAG, "Start try "+Hashtable<String, Vector> beacons);
             // get beacons from static method
             Hashtable<String, Vector> beacons = AttendeaseBeaconConsumer.getBeacons();
 
