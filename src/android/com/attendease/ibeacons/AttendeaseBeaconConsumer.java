@@ -59,6 +59,7 @@ public class AttendeaseBeaconConsumer extends Service implements IBeaconConsumer
     private static String attendeeId = "";
 
     public static Hashtable getBeacons() {
+		Log.i(TAG, "getBeacons");
       return beacons;
     }
 
