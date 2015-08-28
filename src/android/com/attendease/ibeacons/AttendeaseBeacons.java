@@ -98,12 +98,13 @@ Log.v(TAG, "JSONArray beaconArray "+beaconArray );
 //Log.v(TAG, "Start try "+ beacons);
             // get beacons from static method
            Hashtable<String, Vector> beacons = AttendeaseBeaconConsumer.getBeacons();
-			Log.v(TAG, "Start try "+ AttendeaseBeaconConsumer);
+			Log.v(TAG, "Start try ");
             Enumeration<String> enumKey = beacons.keys();
             while(enumKey.hasMoreElements()) {
+				Log.v(TAG, "Start try "+enumKey.hasMoreElements());
                 String key = enumKey.nextElement();
                 Vector data = beacons.get(key);
-
+				Log.v(TAG, "Start try "+data);
                 Iterator i = data.iterator();
                 while (i.hasNext()) {
                   IBeacon beacon = (IBeacon) i.next();
